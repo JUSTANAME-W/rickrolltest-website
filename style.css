@@ -18,15 +18,21 @@ button {
   );
   background-size: 1400% 1400%;
   animation: rainbowBG 8s ease infinite;
-  transition: transform 0.2s;
+  transition: transform 0.5s;
 }
 
 button:hover {
-  transform: scale(1.2) rotate(5deg);
+  animation: rainbowBG 8s ease infinite, spin 1s linear infinite;
+  transform: scale(1.2);
 }
 
 @keyframes rainbowBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg) scale(1.2); }
+  to { transform: rotate(360deg) scale(1.2); }
 }

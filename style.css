@@ -18,12 +18,11 @@ button {
   );
   background-size: 1400% 1400%;
   animation: rainbowBG 8s ease infinite;
-  transition: transform 0.5s;
 }
 
+/* Spin only when hovered */
 button:hover {
   animation: rainbowBG 8s ease infinite, spin 1s linear infinite;
-  transform: scale(1.2);
 }
 
 @keyframes rainbowBG {
@@ -33,6 +32,6 @@ button:hover {
 }
 
 @keyframes spin {
-  from { transform: rotate(0deg) scale(1.2); }
-  to { transform: rotate(360deg) scale(1.2); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

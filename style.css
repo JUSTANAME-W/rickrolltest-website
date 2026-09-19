@@ -1,25 +1,43 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f8ff;
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  color: #2c3e50;
-}
-
 button {
-  background-color: #3498db;
+  font-size: 20px;
+  font-weight: bold;
   color: white;
+  padding: 15px 30px;
   border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
+  border-radius: 10px;
   cursor: pointer;
-  border-radius: 5px;
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  background-size: 1400% 1400%;
+  animation: rainbow 8s ease infinite;
+  transition: transform 0.2s;
 }
 
 button:hover {
-  background-color: #2980b9;
+  transform: scale(1.2) rotate(5deg);
+}
+
+.my-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.my-image img {
+  border: 5px solid hotpink;
+  border-radius: 15px;
+  box-shadow: 0 0 20px limegreen;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

@@ -25,17 +25,6 @@ button:hover {
   transform: scale(1.2) rotate(5deg);
 }
 
-.my-image {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.my-image img {
-  border: 5px solid hotpink;
-  border-radius: 15px;
-  box-shadow: 0 0 20px limegreen;
-}
-
 @keyframes rainbow {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
